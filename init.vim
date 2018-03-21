@@ -47,4 +47,5 @@ nnoremap gk k
 tnoremap <Esc> <C-\><C-n>
 xnoremap > >gv
 xnoremap < <gv
+nmap <F4> :silent make<CR>
 " }}}
