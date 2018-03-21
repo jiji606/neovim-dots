@@ -57,4 +57,5 @@ nmap <Leader>wk :wincmd k<cr>
 nmap <Leader>wl :wincmd l<cr>
 nmap <Leader>[ :tabp<CR>
 nmap <Leader>] :tabn<CR>
+nmap <Leader>b :ls<CR>:b
 " }}}
