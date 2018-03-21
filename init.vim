@@ -7,6 +7,8 @@ filetype plugin indent on
 " SETTINGS: {{{
 set clipboard=unnamedplus
 set colorcolumn=80
+set complete=.,w,b,u,U,kspell,i,d,t,
+set completeopt=menuone,preview,noinsert,noselect
 " }}}
 
 " KEYMAPS: {{{
