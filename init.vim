@@ -10,7 +10,7 @@ set colorcolumn=80
 set complete=.,w,b,u,U,kspell,i,d,t,
 set completeopt=menuone,preview,noinsert,noselect
 set cursorline
-set dir=~/.cache/nvim/
+set dir=~/.cache/nvim/swap
 set fillchars+=vert:│,fold:-
 set foldmethod=indent
 set formatoptions+=crqnbl1j
@@ -33,6 +33,8 @@ set spelllang=en_us,pl
 set tabstop=4
 set termguicolors
 set tildeop
+set undodir=~/.cache/nvim/undo
+set undofile
 " }}}
 
 " KEYMAPS: {{{
