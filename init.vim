@@ -17,6 +17,8 @@ set formatoptions+=crqnbl1j
 set hlsearch
 set inccommand=split
 set laststatus=2
+set list
+set listchars=tab:\│\ ,trail:¬,extends:>,precedes:<,nbsp:+
 " }}}
 
 " KEYMAPS: {{{
