@@ -21,6 +21,7 @@ set list
 set listchars=tab:\│\ ,trail:¬,extends:>,precedes:<,nbsp:+
 set modeline
 set mouse=a
+set noexpandtab
 " }}}
 
 " KEYMAPS: {{{
