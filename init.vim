@@ -27,6 +27,7 @@ set noshowcmd
 set number
 set numberwidth=5
 set omnifunc=syntaxcomplete#Complete
+set scrolloff=10
 " }}}
 
 " KEYMAPS: {{{
