@@ -32,6 +32,7 @@ set shiftwidth=4
 set spelllang=en_us,pl
 set tabstop=4
 set termguicolors
+set tildeop
 " }}}
 
 " KEYMAPS: {{{
