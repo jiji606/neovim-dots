@@ -11,6 +11,7 @@ set complete=.,w,b,u,U,kspell,i,d,t,
 set completeopt=menuone,preview,noinsert,noselect
 set cursorline
 set dir=~/.cache/nvim/
+set fillchars+=vert:│,fold:-
 " }}}
 
 " KEYMAPS: {{{
