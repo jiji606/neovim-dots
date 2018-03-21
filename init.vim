@@ -29,6 +29,7 @@ set numberwidth=5
 set omnifunc=syntaxcomplete#Complete
 set scrolloff=10
 set shiftwidth=4
+set spelllang=en_us,pl
 set tabstop=4
 " }}}
 
