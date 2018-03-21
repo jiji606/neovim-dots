@@ -19,6 +19,7 @@ set inccommand=split
 set laststatus=2
 set list
 set listchars=tab:\│\ ,trail:¬,extends:>,precedes:<,nbsp:+
+set modeline
 " }}}
 
 " KEYMAPS: {{{
