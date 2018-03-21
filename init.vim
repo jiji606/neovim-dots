@@ -45,4 +45,6 @@ nnoremap k gk
 nnoremap gj j
 nnoremap gk k
 tnoremap <Esc> <C-\><C-n>
+xnoremap > >gv
+xnoremap < <gv
 " }}}
