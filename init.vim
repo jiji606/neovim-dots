@@ -49,4 +49,6 @@ xnoremap > >gv
 xnoremap < <gv
 nmap <F4> :silent make<CR>
 nmap <silent> <C-c> :nohlsearch<CR>
+
+let mapleader=" "
 " }}}
