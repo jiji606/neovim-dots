@@ -51,4 +51,10 @@ nmap <F4> :silent make<CR>
 nmap <silent> <C-c> :nohlsearch<CR>
 
 let mapleader=" "
+nmap <Leader>wh :wincmd h<cr>
+nmap <Leader>wj :wincmd j<cr>
+nmap <Leader>wk :wincmd k<cr>
+nmap <Leader>wl :wincmd l<cr>
+nmap <Leader>[ :tabp<CR>
+nmap <Leader>] :tabn<CR>
 " }}}
