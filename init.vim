@@ -20,6 +20,7 @@ set laststatus=2
 set list
 set listchars=tab:\│\ ,trail:¬,extends:>,precedes:<,nbsp:+
 set modeline
+set mouse=a
 " }}}
 
 " KEYMAPS: {{{
