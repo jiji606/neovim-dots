@@ -52,3 +52,6 @@
 [submodule "pathogen"]
 	path = pathogen
 	url = https://github.com/tpope/vim-pathogen
+[submodule "bundle/rainbow-levels.vim"]
+	path = bundle/rainbow-levels.vim
+	url = https://github.com/thiagoalessio/rainbow_levels.vim
