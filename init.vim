@@ -31,6 +31,7 @@ set scrolloff=10
 set shiftwidth=4
 set spelllang=en_us,pl
 set tabstop=4
+set termguicolors
 " }}}
 
 " KEYMAPS: {{{
