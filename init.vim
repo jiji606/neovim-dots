@@ -62,4 +62,12 @@ nmap <Leader>y "+
 nmap <Leader>d "_
 nmap <silent> <Leader>r :set relativenumber!<CR>
 nmap <leader>l :RainbowLevelsToggle<cr>
+
+inoremap (<CR> (<CR>)<Esc>O
+inoremap {<CR> {<CR>}<Esc>O
+inoremap {; {<CR>};<Esc>O
+inoremap {, {<CR>},<Esc>O
+inoremap [<CR> [<CR>]<Esc>O
+inoremap [; [<CR>];<Esc>O
+inoremap [, [<CR>],<Esc>O
 " }}}
