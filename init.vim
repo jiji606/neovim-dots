@@ -58,4 +58,6 @@ nmap <Leader>wl :wincmd l<cr>
 nmap <Leader>[ :tabp<CR>
 nmap <Leader>] :tabn<CR>
 nmap <Leader>b :ls<CR>:b
+nmap <Leader>y "+
+nmap <Leader>d "_
 " }}}
