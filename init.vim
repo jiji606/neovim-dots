@@ -14,6 +14,7 @@ set dir=~/.cache/nvim/
 set fillchars+=vert:│,fold:-
 set foldmethod=indent
 set formatoptions+=crqnbl1j
+set hlsearch
 " }}}
 
 " KEYMAPS: {{{
