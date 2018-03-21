@@ -40,4 +40,8 @@ set virtualedit=insert,block
 
 " KEYMAPS: {{{
 map Y y$
+nnoremap j gj
+nnoremap k gk
+nnoremap gj j
+nnoremap gk k
 " }}}
