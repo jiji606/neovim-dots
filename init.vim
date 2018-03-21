@@ -24,6 +24,8 @@ set mouse=a
 set noexpandtab
 set noruler
 set noshowcmd
+set number
+set numberwidth=5
 " }}}
 
 " KEYMAPS: {{{
