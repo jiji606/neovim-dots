@@ -41,6 +41,7 @@ set virtualedit=insert,block
 " STATUSLINE: {{{
 
 set statusline=
+set statusline+=%f
 " }}}
 
 " KEYMAPS: {{{
