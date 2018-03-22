@@ -42,6 +42,7 @@ set virtualedit=insert,block
 
 set statusline=
 set statusline+=[%{virtualenv#statusline()}]
+set statusline+=[%{ObsessionStatus()}]
 set statusline+=%f
 set statusline+=%h
 set statusline+=%m
