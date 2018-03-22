@@ -48,6 +48,7 @@ set statusline+=%r
 set statusline+=%y
 set statusline+=%=
 set statusline+=%c,
+set statusline+=%l/%L
 " }}}
 
 " KEYMAPS: {{{
