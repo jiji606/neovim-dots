@@ -41,6 +41,7 @@ set virtualedit=insert,block
 " STATUSLINE: {{{
 
 set statusline=
+set statusline+=[%{virtualenv#statusline()}]
 set statusline+=%f
 set statusline+=%h
 set statusline+=%m
