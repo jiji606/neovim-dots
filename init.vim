@@ -38,6 +38,9 @@ set undofile
 set virtualedit=insert,block
 " }}}
 
+" STATUSLINE: {{{
+" }}}
+
 " KEYMAPS: {{{
 map Y y$
 nnoremap j gj
