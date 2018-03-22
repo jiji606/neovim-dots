@@ -55,3 +55,6 @@
 [submodule "bundle/rainbow-levels.vim"]
 	path = bundle/rainbow-levels.vim
 	url = https://github.com/thiagoalessio/rainbow_levels.vim
+[submodule "bundle/vim-orgmode"]
+	path = bundle/vim-orgmode
+	url = https://github.com/jceb/vim-orgmode
