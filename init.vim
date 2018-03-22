@@ -52,6 +52,7 @@ set statusline=
 set statusline+=[%{virtualenv#statusline()}]
 set statusline+=[%{ObsessionStatus()}]
 set statusline+=[%{StatuslineGit()}]
+set statusline+=[%{getcwd()}]
 set statusline+=%f
 set statusline+=%h
 set statusline+=%m
