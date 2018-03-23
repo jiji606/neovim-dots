@@ -1,0 +1,258 @@
+<%
+	# vim: makeprg=erb\ -T\ -\ dualtone.erb > dualtone.vim
+	# RNB, A VIM COLORSCHEME TEMPLATE
+	# Author:        Romain Lafourcade (https://github.com/romainl)
+	# Canonical URL: https://gist.github.com/romainl/5cd2f4ec222805f49eca
+
+	# This template is designed to help vimmers create their own colorschemes
+	# without much effort.
+	#
+	# You will need Ruby to generate your colorscheme but Ruby knowledge is
+	# not needed at all.
+	#
+	# The process is divided in four steps:
+	#   1. start by editing your colorscheme's information,
+	#   2. define your colors,
+	#   3. define your highlight groups and links,
+	#   4. and generate your colorscheme.
+
+	# Step 1: information
+	#
+	# Make sure the name of your colorscheme is unique and attractive.
+	# The description should fit in a single line with no linefeed.
+	# 'background' can be "light" or "dark".
+	information = {
+		author:      "jiji",
+		email:       "p1ngu1n0fd00m@gmail.com",
+		name:        "dualtone",
+		description: "Simple typographic vim colorscheme",
+		background:  "dark",
+		webpage:     "nothing-here"
+	}
+
+	# Step 2: colors
+	#
+	# black = [       give each color a distinctive name
+	#   "#000000",    hexadecimal color for GVim/MacVim and "true colors" terminals
+	#   0,            integer between 0 and 255 for terminals supporting 256 colors
+	#   "black"       color name for less capable color terminals, can be "darkred", "red",
+	#                 "darkgreen", "green", "darkyellow", "yellow", "darkblue", "blue",
+	#                 "darkmagenta", "magenta", "black", "darkgrey", "grey", "white"
+	# ]
+	#
+	# If your colors are defined correctly, the resulting colorscheme is guaranteed
+	# to work in GVim (Windows/Linux), MacVim, and any properly set up terminal emulator.
+	#
+	# The colors below are the first 16 colors of the xterm palette. They
+	# are only here as an example so you can get rid of them, I won't be mad.
+
+
+	pink_dark  = ["#D85774",0,"magenta"]
+	pink_light = ["#F59BB0",0,"magenta"]
+	cyan_dark  = ["#57D8BB",0,"cyan"]
+	cyan_ligt  = ["#9BF5E0",0,"cyan"]
+
+	UI_dark1  = [ "#000000",0,"black"]
+	UI_dark2  = [ "#111111",0,"black"]
+	UI_dark3  = [ "#1B1B1B",0,"black"]
+	UI_dark4  = [ "#292929",0,"black"]
+	UI_dark5  = [ "#333333",0,"black"]
+	UI_dark6  = [ "#3C3C3C",0,"black"]
+	UI_dark7  = [ "#434343",0,"black"]
+	UI_light1 = [ "#FFFFFF",0,"white"]
+	UI_light2 = [ "#EEEEEE",0,"white"]
+	UI_light3 = [ "#DCDCDC",0,"white"]
+	UI_light4 = [ "#C7C7C7",0,"white"]
+	UI_light5 = [ "#AFAFAF",0,"white"]
+	UI_light6 = [ "#929292",0,"white"]
+	UI_light7 = [ "#6A6A6A",0,"white"]
+
+	UI_red        = ["#D92626",0,"red"]
+	UI_darkred    = ["#690000",0,"darkred"]
+	UI_green      = ["#26D926",0,"green"]
+	UI_darkgreen  = ["#006900",0,"darkgreen"]
+	UI_blue       = ["#2626D9",0,"blue"]
+	UI_darkblue   = ["#000069",0,"darblue"]
+	UI_yellow     = ["#D9D926",0,"yellow"]
+	UI_darkyellow = ["#696900",0,"darkyellow"]
+
+	# Step 3: highlights
+	#
+	# You can define highlight groups like this:
+	#  /
+	#   [ "Normal",       name of the highlight group
+	#     white,          the color used for background color, or use "NONE", "fg" or "bg"
+	#     darkgray,       the color used for foreground color, or use "NONE", "fg" or "bg"
+	#     "NONE"          style, can be "bold", "underline", "reverse", "italic",
+	#                     "standout", "NONE" or "undercurl"
+	#   ]
+	#
+	# The sample above tells Vim to render normal text in dark gray against a white
+	# background, without any styling.
+	#
+	# or link an highlight group to another:
+	#
+	#   [ "Title", "Normal" ]
+	#
+	# In GUI Vim, there is an additional color for the undercurl used to
+	# highlight spelling mistakes:
+	#
+	#   [ "SpellBad",     name of the highlight group
+	#     "NONE",         the color used for background color, or use "NONE", "fg" or "bg"
+	#     red,            the color used for foreground color, or use "NONE", "fg" or "bg"
+	#     "undercurl",    style
+	#     red             color used for the undercurl
+	#   ]
+	#
+	# The sample above tells Vim to render badly spelled words in red against the current
+	# background, with a red undercurl.
+	#
+	# You can add any custom highlight group to the standard list below but you shouldn't
+	# remove any if you want a working colorscheme.
+	# TODO:
+	       # group           #bg      #fg      #style
+
+highlights  =                 [
+
+	[  "Normal",         "NONE",         UI_light1,  "NONE"    ],
+	[  "NonText",        "NONE",         UI_dark4,   "NONE"    ],
+	[  "Comment",        "NONE",         UI_dark7,  "NONE"    ],
+	[  "Constant",       "NONE",         UI_light1,  "bold"    ],
+	[  "Error",          "NONE",         UI_light1,  "NONE"    ],
+	[  "Identifier",     "NONE",         UI_light1,  "NONE"    ],
+	[  "Ignore",         "NONE",         UI_light1,  "NONE"    ],
+	[  "PreProc",        "NONE",         UI_light1,  "NONE"    ],
+	[  "Special",        "NONE",         UI_light1,  "NONE"    ],
+	[  "Statement",      "NONE",         UI_light1,  "NONE"    ],
+	[  "String",         "NONE",         UI_light1,  "NONE"    ],
+	[  "Number",         "NONE",         UI_light1,  "NONE"    ],
+	[  "Todo",           "NONE",         UI_light2,  "italic"  ],
+	[  "Type",           "NONE",         UI_light1,  "NONE"    ],
+	[  "Underlined",     "NONE",         UI_light1,  "NONE"    ],
+	[  "StatusLine",     UI_dark3,       UI_light3,  "NONE"    ],
+	[  "StatusLineNC",   UI_dark3,       UI_dark7,   "NONE"    ],
+	[  "VertSplit",      "NONE",         UI_dark4,   "NONE"    ],
+	[  "TabLine",        UI_dark2,       UI_dark7,   "NONE"    ],
+	[  "TabLineFill",    UI_dark2,       UI_dark7,   "NONE"    ],
+	[  "TabLineSel",     UI_dark4,       UI_light2,  "NONE"    ],
+	[  "Title",          "NONE",         UI_light1,     "bold"    ],
+	[  "CursorLine",     UI_dark3,       "NONE",     "NONE"    ],
+	[  "LineNr",         "NONE",         UI_dark7,   "NONE"    ],
+	[  "CursorLineNr",   UI_dark2,       UI_light7,  "NONE"    ],
+	[  "helpLeadBlank",  "NONE",         UI_light1,  "bold"    ],
+	[  "helpNormal",     "NONE",         UI_light1,  "italic"  ],
+	[  "Visual",         UI_dark4,       "NONE",     "NONE"    ],
+	[  "VisualNOS",      UI_dark3,       "NONE",     "NONE"    ],
+	[  "Pmenu",          UI_dark4,       UI_light1,  "NONE"    ],
+	[  "PmenuSel",       UI_dark7,       UI_light2,  "NONE"    ],
+	[  "PmenuSbar",      UI_dark4,       UI_light1,  "NONE"    ],
+	[  "PmenuThumb",     UI_light7,      UI_light1,  "NONE"    ],
+	[  "FoldColumn",     "NONE",         UI_light1,  "NONE"    ],
+	[  "Folded",         UI_dark7,       "NONE",     "bold"    ],
+	[  "WildMenu",       UI_darkred,     UI_light3,  "bold"    ],
+	[  "SpecialKey",     "NONE",         UI_dark7,   "NONE"    ],
+	[  "DiffAdd",        UI_darkgreen,   UI_green,     "NONE"    ],
+	[  "DiffChange",     UI_darkyellow,  UI_yellow,     "NONE"    ],
+	[  "DiffDelete",     UI_darkred,     UI_red,     "NONE"    ],
+	[  "DiffText",       UI_darkyellow,      UI_yellow,     "NONE"    ],
+	[  "IncSearch",      "NONE",         UI_light1,  "NONE"    ],
+	[  "Search",         "NONE",         UI_light1,  "NONE"    ],
+	[  "Directory",      "NONE",         UI_light1,  "NONE"    ],
+	[  "MatchParen",     "NONE",         UI_light1,  "NONE"    ],
+	[  "SpellBad",       "NONE",         UI_light1,  "NONE"    ],
+	[  "SpellCap",       "NONE",         UI_light1,  "NONE"    ],
+	[  "SpellLocal",     "NONE",         UI_light1,  "NONE"    ],
+	[  "SpellRare",      "NONE",         UI_light1,  "NONE"    ],
+	[  "ColorColumn",    "NONE",         UI_light1,  "NONE"    ],
+	[  "signColumn",     "NONE",         UI_light1,  "NONE"    ],
+	[  "ErrorMsg",       "NONE",         UI_light1,  "NONE"    ],
+	[  "ModeMsg",        "NONE",         UI_light1,  "NONE"    ],
+	[  "MoreMsg",        "NONE",         UI_light1,  "NONE"    ],
+	[  "Question",       "NONE",         UI_light1,  "NONE"    ],
+	[  "WarningMsg",     "NONE",         UI_light1,  "NONE"    ],
+	[  "Cursor",         "NONE",         UI_light1,  "NONE"    ],
+	[  "CursorColumn",   "NONE",         UI_light1,  "NONE"    ]
+
+]
+
+	# Step 4: generation
+	#
+	# From a separate shell:
+	#
+	#     $ erb -T - bar.erb > bar.vim
+	#
+	# From Vim:
+	#
+	#     :!erb -T - % > %:r.vim
+	
+	# A few general advices:
+	#
+	#   * The Windows console is limited to the 16 so-called "ANSI" colors but it has
+	#     a few of them interverted which makes numbers impractical. Use color names
+	#     instead of numbers: :help cterm-colors
+	#   * The Windows console (yeah…) doesn't do italics, underlines or bolded text;
+	#     it is limited to normal and reverse. Keep that in mind if you want
+	#     your colorscheme to be usable in as many environments as possible by as many
+	#     people as possible.
+	#   * All of the terminal emulators in use these days allow their users to
+	#     change the 16 so-called "ANSI" colors. It is also possible on some platforms
+	#     to change some or all of the 256 colors in the xterm palette. Don't take
+	#     anything for granted.
+	#   * When used against a light background, strong colors work better than muted
+	#     ones. Light or dark doesn't really matters. Also, it is harder to discriminate
+	#     between two similar colors on a light background.
+	#   * Both strong and muted colors work well against a dark background. It is also
+	#     easier to work with similar colors, but dark colors don't work at all.
+	#   * Use as many text samples as possible. String-heavy languages may look completely
+	#     different than keyword-heavy ones. This can have an impact on the usability
+	#     of your colorscheme.
+	#   * Most terminal emulators and terminal multiplexers currently in use on unix-like
+	#     systems support 256 colors but they almost always default to a '$TERM' that tells
+	#     Vim otherwise. Your users will need to make sure their terminal emulator/multiplexer
+	#     is correctly set up if they want to enjoy the best possible experience.
+
+	# Many thanks to Barry Arthur (https://github.com/dahu) for the original idea.
+
+	# You don't need to edit anything beyond this line.
+-%>
+" <%= information[:name] %>.vim -- Vim color scheme.
+" Author:      <%= information[:author] %> (<%= information[:email] %>)
+" Webpage:     <%= information[:webpage] %>
+" Description: <%= information[:description] %>
+
+hi clear
+
+if exists("syntax_on")
+	syntax reset
+endif
+
+let colors_name = "<%= information[:name] %>"
+
+if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
+<% for highlight in highlights -%>
+<% if highlight.length == 2 -%>
+	hi link <%= highlight[0] %> <%= highlight[1] %>
+<% elsif highlight.length == 4 -%>
+	hi <%= highlight[0] %> ctermbg=<%= highlight[1].kind_of?(String) ? highlight[1] : highlight[1][1] %> ctermfg=<%= highlight[2].kind_of?(String) ? highlight[2] : highlight[2][1] %> cterm=<%= highlight[3] %> guibg=<%= highlight[1].kind_of?(String) ? highlight[1] : highlight[1][0] %> guifg=<%= highlight[2].kind_of?(String) ? highlight[2] : highlight[2][0] %> gui=<%= highlight[3] %>
+<% if highlight[0] == "Normal" -%>
+	set background=<%= information[:background] %>
+<% end -%>
+<% else -%>
+	hi <%= highlight[0] %> ctermbg=<%= highlight[1].kind_of?(String) ? highlight[1] : highlight[1][1] %> ctermfg=<%= highlight[2].kind_of?(String) ? highlight[2] : highlight[2][1] %> cterm=<%= highlight[3] %> guibg=<%= highlight[1].kind_of?(String) ? highlight[1] : highlight[1][0] %> guifg=<%= highlight[2].kind_of?(String) ? highlight[2] : highlight[2][0] %> gui=<%= highlight[3] %> guisp=<%= highlight[4].kind_of?(String) ? highlight[4] : highlight[4][0] %>
+<% end -%>
+<% end -%>
+elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
+	set t_Co=16
+<% for highlight in highlights -%>
+<% if highlight.length == 2 -%>
+	hi link <%= highlight[0] %> <%= highlight[1] %>
+<% else -%>
+	hi <%= highlight[0] %> ctermbg=<%= highlight[1].kind_of?(String) ? highlight[1] : highlight[1][2] %> ctermfg=<%= highlight[2].kind_of?(String) ? highlight[2] : highlight[2][2] %> cterm=<%= highlight[3] %>
+<% if highlight[0] == "Normal" -%>
+	set background=<%= information[:background] %>
+<% end -%>
+<% end -%>
+<% end -%>
+endif
+
+" Generated with RNB (https://gist.github.com/romainl/5cd2f4ec222805f49eca)
