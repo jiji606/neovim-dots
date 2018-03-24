@@ -116,3 +116,5 @@ let g:gitgutter_sign_modified_removed = '┃'
 let g:gitgutter_highlight_lines = 0
 let g:gitgutter_override_sign_column_highlight = 0
 " }}}
+
+colorscheme aquaink
