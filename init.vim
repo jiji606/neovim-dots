@@ -76,9 +76,10 @@ tnoremap <Esc> <C-\><C-n>
 xnoremap > >gv
 xnoremap < <gv
 nmap <F4> :silent make<CR>
-nmap <silent> <C-c> :nohlsearch<CR>
+nmap <silent><C-c> :nohlsearch<CR>
 
 let mapleader=" "
+
 nmap <Leader>wh :wincmd h<cr>
 nmap <Leader>wj :wincmd j<cr>
 nmap <Leader>wk :wincmd k<cr>
@@ -90,6 +91,7 @@ nmap <Leader>y "+
 nmap <Leader>d "_
 nmap <silent> <Leader>r :set relativenumber!<CR>
 nmap <leader>l :RainbowLevelsToggle<cr>
+
 
 inoremap (<CR> (<CR>)<Esc>O
 inoremap {<CR> {<CR>}<Esc>O
