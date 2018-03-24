@@ -58,3 +58,6 @@
 [submodule "bundle/vim-orgmode"]
 	path = bundle/vim-orgmode
 	url = https://github.com/jceb/vim-orgmode
+[submodule "bundle/errormaker.vim"]
+	path = bundle/errormaker.vim
+	url = https://github.com/mh21/errormarker.vim
