@@ -102,3 +102,8 @@ inoremap [<CR> [<CR>]<Esc>O
 inoremap [; [<CR>];<Esc>O
 inoremap [, [<CR>],<Esc>O
 " }}}
+
+" Plugins settings
+
+" GITGUTTER: {{{
+" }}}
