@@ -92,6 +92,7 @@ nmap <Leader>d "_
 
 nmap <silent><Leader>r :set relativenumber!<CR>
 nmap <silent><leader>l :RainbowLevelsToggle<CR>
+nmap <silent><leader>g :GitGutterLineHighlightsToggle<CR>
 
 inoremap (<CR> (<CR>)<Esc>O
 inoremap {<CR> {<CR>}<Esc>O
