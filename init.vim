@@ -136,4 +136,9 @@ let g:tagbar_iconchars = ['▸', '▾']
 let g:tagbar_autoshowtag = 1
 " }}}
 
+" MINISNIP: {{{
+
+let g:minisnip_trigger = '<C-S>'
+let g:minisnip_dir = $HOME . '/.config/nvim/minisnip'
+" }}}
 colorscheme aquaink
