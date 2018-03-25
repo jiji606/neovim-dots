@@ -127,4 +127,13 @@ let errormarker_errorgroup = "DiffDelete"
 let errormarker_warninggroup = "DiffChange"
 " }}}
 
+" TAGBAR: {{{
+
+let g:tagbar_compact = 1
+let g:tagbar_show_visibility = 1
+let g:tagbar_singleclick = 1
+let g:tagbar_iconchars = ['▸', '▾']
+let g:tagbar_autoshowtag = 1
+" }}}
+
 colorscheme aquaink
