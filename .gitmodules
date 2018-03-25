@@ -64,3 +64,6 @@
 [submodule "bundle/vim-commentary"]
 	path = bundle/vim-commentary
 	url = https://github.com/tpope/vim-commentary
+[submodule "bundle/vim-minisnip"]
+	path = bundle/vim-minisnip
+	url = https://github.com/KeyboardFire/vim-minisnip
