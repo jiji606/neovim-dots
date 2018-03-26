@@ -67,3 +67,6 @@
 [submodule "bundle/vim-minisnip"]
 	path = bundle/vim-minisnip
 	url = https://github.com/KeyboardFire/vim-minisnip
+[submodule "bundle/vim-speeddating"]
+	path = bundle/vim-speeddating
+	url = https://github.com/tpope/vim-speeddating
