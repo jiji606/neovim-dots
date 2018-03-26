@@ -36,6 +36,8 @@ set tildeop
 set undodir=~/.cache/nvim/undo
 set undofile
 set virtualedit=insert,block
+
+syntax sync fromstart
 " }}}
 
 " STATUSLINE: {{{
