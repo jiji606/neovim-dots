@@ -143,4 +143,5 @@ let g:tagbar_autoshowtag = 1
 let g:minisnip_trigger = '<C-S>'
 let g:minisnip_dir = $HOME . '/.config/nvim/minisnip'
 " }}}
+
 colorscheme aquaink
