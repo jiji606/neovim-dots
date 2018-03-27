@@ -91,6 +91,7 @@ nmap <Leader>] :tabn<CR>
 nmap <Leader>b :ls<CR>:b
 nmap <Leader>y "+
 nmap <Leader>d "_
+nmap <Leader>e :Lexplore<CR>
 
 nmap <silent><Leader>r :set relativenumber!<CR>
 nmap <silent><leader>l :RainbowLevelsToggle<CR>
