@@ -40,6 +40,9 @@ set virtualedit=insert,block
 syntax sync fromstart
 " }}}
 
+" AUTOCOMMANDS: {{{
+" }}}
+
 " STATUSLINE: {{{
 function! GitBranch()
 	return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
