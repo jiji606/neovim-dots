@@ -71,6 +71,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	hi WarningMsg ctermbg=0 ctermfg=0 cterm=NONE guibg=#D92626 guifg=#EEEEEE gui=NONE
 	hi Cursor ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
 	hi CursorColumn ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
+	hi QuickFixLine ctermbg=0 ctermfg=NONE cterm=bold guibg=#1B1B1B guifg=NONE gui=bold
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
 	set t_Co=16
 	hi Normal ctermbg=NONE ctermfg=white cterm=NONE
@@ -132,6 +133,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
 	hi WarningMsg ctermbg=red ctermfg=white cterm=NONE
 	hi Cursor ctermbg=NONE ctermfg=NONE cterm=NONE
 	hi CursorColumn ctermbg=NONE ctermfg=NONE cterm=NONE
+	hi QuickFixLine ctermbg=black ctermfg=NONE cterm=bold
 endif
 
 " Generated with RNB (https://gist.github.com/romainl/5cd2f4ec222805f49eca)
