@@ -133,6 +133,10 @@ let errormarker_errortextgroup = "SpellCap"
 let errormarker_warningtextgroup = "SpellLocal"
 let errormarker_errorgroup = "DiffDelete"
 let errormarker_warninggroup = "DiffChange"
+
+let &errorformat="%f:%l: %t%*[^:]:%m," . &errorformat
+let &errorformat="%f:%l:%c: %t%*[^:]:%m," . &errorformat
+let errormarker_warningtypes = "wW"
 " }}}
 
 " TAGBAR: {{{
