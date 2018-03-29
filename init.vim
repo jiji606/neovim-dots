@@ -128,7 +128,7 @@ let g:gitgutter_override_sign_column_highlight = 0
 " ERRORMARKER: {{{
 
 let errormarker_errortext = "! "
-let errormarker_warningtext = "? "
+let errormarker_warningtext = "! "
 let errormarker_errortextgroup = "SpellCap"
 let errormarker_warningtextgroup = "SpellLocal"
 let errormarker_errorgroup = "DiffDelete"
