@@ -8,7 +8,7 @@ filetype plugin indent on
 set clipboard=unnamedplus
 set colorcolumn=80
 set complete=.,w,b,u,U,kspell,i,d,t,
-set completeopt=menuone,preview,noinsert,noselect
+set completeopt=menuone,noinsert,noselect
 set cursorline
 set dir=~/.cache/nvim/swap
 set fillchars+=vert:│,fold:-
