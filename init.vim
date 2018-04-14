@@ -174,4 +174,8 @@ let g:jedi#popup_select_first = 1
 let g:jedi#show_call_signatures = 2
 " }}}
 
+" PYTHON SYNTAX: {{{
+let g:python_highlight_all = 1
+" }}}
+
 colorscheme aquaink
