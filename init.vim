@@ -175,6 +175,7 @@ let g:jedi#show_call_signatures = 2
 " }}}
 
 " PYTHON SYNTAX: {{{
+
 let g:python_highlight_all = 1
 " }}}
 
