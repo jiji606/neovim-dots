@@ -1,0 +1,5 @@
+class {{++}}({{++}}):
+    """ {{+sample docstring+}} """
+
+    def __init__(self, {{++}}):
+        {{++}}
