@@ -169,8 +169,8 @@ let g:netrw_cursor = 0
 
 let g:jedi#completions_command = ''
 let g:jedi#auto_vim_configuration = 0
-let g:jedi#popup_on_dot = 0
-let g:jedi#popup_select_first = 0
+let g:jedi#popup_on_dot = 1
+let g:jedi#popup_select_first = 1
 let g:jedi#show_call_signatures = 2
 " }}}
 
